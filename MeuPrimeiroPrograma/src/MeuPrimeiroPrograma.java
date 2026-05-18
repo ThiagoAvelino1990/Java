@@ -7,6 +7,6 @@ public class MeuPrimeiroPrograma {
          */
         System.out.println("Hello World!");
 
-        System.out.print("programa escrito em " + args[0] + "por " + args[1]);
+        //System.out.print("programa escrito em " + args[0] + "por " + args[1]);
     }
 }
