@@ -52,4 +52,8 @@ public class Livro {
     public void setIsbn(int isbn){
         this.isbn = isbn;
     }
+
+    public void imprimirDadosLivro(){
+        System.out.println("Nome do livro: "+this.nome+"\nDescrição do Livro: "+this.descricao+"\nValor do Livro: "+this.valor+"\nISBN: "+this.isbn);
+    }
 }
