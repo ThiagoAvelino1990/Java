@@ -7,6 +7,7 @@ public class Livro {
     private String descricao;
     private double valor;
     private int isbn;
+    public Autor autor;
 
     /**
      * Construtor da classe Livro que recebe parâmetros
@@ -20,7 +21,9 @@ public class Livro {
         this.descricao = descricaoLivro;
         this.valor = valorLivro;
         this.isbn = isbnLivro;
+        System.out.println("Livro criado já com as informações pré-definidas");
     }
+
 
     /**
      * Declaração dos métodos getters and setters
@@ -53,7 +56,34 @@ public class Livro {
         this.isbn = isbn;
     }
 
+
+
+
     public void imprimirDadosLivro(){
         System.out.println("Nome do livro: "+this.nome+"\nDescrição do Livro: "+this.descricao+"\nValor do Livro: "+this.valor+"\nISBN: "+this.isbn);
+    }
+
+    public String aplicarDesconto(double desconto){
+        if (desconto >= 100) {
+            return "Desconto não aplicado!";
+        }else{
+            this.valor -= this.valor * (desconto/100);
+            return "Desconto aplicado!";
+        }
+
+    }
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "nome='" + nome + '\'' +
+                ", descricao='" + descricao + '\'' +
+                ", valor=" + valor +
+                ", isbn=" + isbn +
+                '}';
+    }
+
+    public boolean temAutor(){
+        return this.autor != null;
     }
 }
