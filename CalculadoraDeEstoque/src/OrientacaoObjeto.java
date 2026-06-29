@@ -1,9 +1,10 @@
-public class CalculadoraDeEstoque {
-    public static void main(String[] args){
+public class OrientacaoObjeto {
 
-        IntroducaoJava introducaoJava = new IntroducaoJava();
-        introducaoJava.imprimirDados();
+    public OrientacaoObjeto(){
 
+    }
+
+    public void ImprimirOO(){
         System.out.print("====== ");
         System.out.print("Orientação ao objeto");
         System.out.println(" ======");
@@ -33,16 +34,20 @@ public class CalculadoraDeEstoque {
         autor2.setCpf(22345678);
         autor2.setEmail("mariazinha@email.com.br");
 
-        livro1.autor = autor1; //Referência
+        livro1.setAutor(autor1); //Referência
 
-        System.out.println(livro1.aplicarDesconto(99.99));
+        if(!livro1.aplicarDesconto(99.99)){
+            System.out.println("Desconto não aplicado. Desconto acima de 30 %");
+        }else {
+            System.out.println("Desconto aplicado.");
+        }
         System.out.println(livro1.toString());
         if(livro1.temAutor()){
             System.out.println(autor1.toString());
         }
 
 
-        livro2.autor = autor2; // Referência
+        livro2.setAutor(autor2); // Referência
         System.out.println(livro2.toString());
         if(livro2.temAutor()){
             System.out.println(autor2.toString());
@@ -58,7 +63,6 @@ public class CalculadoraDeEstoque {
         }else{
             System.out.println("Livro não possui autor");
         }
-
-
     }
+
 }

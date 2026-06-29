@@ -7,9 +7,9 @@ public class Autor {
         System.out.println("Um Autor foi criado");
     }
 
-    public String nome;
-    public String email;
-    public Integer cpf;
+    private String nome;
+    private String email;
+    private Integer cpf;
 
     public String getNome() {
         return nome;

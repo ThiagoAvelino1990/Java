@@ -7,7 +7,7 @@ public class Livro {
     private String descricao;
     private double valor;
     private int isbn;
-    public Autor autor;
+    private Autor autor;
 
     /**
      * Construtor da classe Livro que recebe parâmetros
@@ -56,6 +56,12 @@ public class Livro {
         this.isbn = isbn;
     }
 
+    public Autor getAutor(){
+        return this.autor;
+    }
+    public void setAutor(Autor autor){
+        this.autor = autor;
+    }
 
 
 
@@ -63,13 +69,13 @@ public class Livro {
         System.out.println("Nome do livro: "+this.nome+"\nDescrição do Livro: "+this.descricao+"\nValor do Livro: "+this.valor+"\nISBN: "+this.isbn);
     }
 
-    public String aplicarDesconto(double desconto){
-        if (desconto >= 100) {
-            return "Desconto não aplicado!";
-        }else{
-            this.valor -= this.valor * (desconto/100);
-            return "Desconto aplicado!";
+    public boolean aplicarDesconto(double desconto){
+        if (desconto > 30) {
+            return false;
         }
+        this.valor -= this.valor * (desconto/100);
+        return true;
+
 
     }
 
