@@ -63,6 +63,20 @@ public class OrientacaoObjeto {
         }else{
             System.out.println("Livro não possui autor");
         }
+
+        Autor autor4 = new Autor();
+        autor4.setNome("Joaquim");
+        autor4.setEmail("joaquim.silva@email.com.br");
+        autor4.setCpf(12345678);
+
+
+        Livro livro4 = new Livro(autor4);
+
+        livro4.setNome("Livro 4");
+        livro4.setDescricao("O livro 4");
+        livro4.setValor(89.90);
+
+        livro4.imprimirDadosLivro();
     }
 
 }

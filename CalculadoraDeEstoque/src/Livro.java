@@ -24,6 +24,17 @@ public class Livro {
         System.out.println("Livro criado já com as informações pré-definidas");
     }
 
+    public Livro(Autor autor){
+        this(); //Encadeamento para o construtor public Livro(){}
+        this.autor = autor;
+    }
+
+    /**
+     * Encadeamento para o campo ISBN
+     */
+    public Livro(){
+        this.isbn = 0000000000000;
+    }
 
     /**
      * Declaração dos métodos getters and setters
@@ -66,7 +77,7 @@ public class Livro {
 
 
     public void imprimirDadosLivro(){
-        System.out.println("Nome do livro: "+this.nome+"\nDescrição do Livro: "+this.descricao+"\nValor do Livro: "+this.valor+"\nISBN: "+this.isbn);
+        System.out.println("Nome do livro: "+this.nome+"\nDescrição do Livro: "+this.descricao+"\nValor do Livro: "+this.valor+"\nISBN: "+this.isbn+"\nAutor: "+this.autor);
     }
 
     public boolean aplicarDesconto(double desconto){
