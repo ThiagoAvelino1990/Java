@@ -4,9 +4,11 @@ public class DesbravandoJavaOO {
         //IntroducaoJava introducaoJava = new IntroducaoJava();
         //introducaoJava.imprimirDados();
 
-        OrientacaoObjeto orientacaoObjeto = new OrientacaoObjeto();
-        orientacaoObjeto.ImprimirOO();
+        //OrientacaoObjeto orientacaoObjeto = new OrientacaoObjeto();
+        //orientacaoObjeto.ImprimirOO();
 
+        Heranca heranca = new Heranca();
+        heranca.ImprimirDadosHeranca();
 
     }
 }

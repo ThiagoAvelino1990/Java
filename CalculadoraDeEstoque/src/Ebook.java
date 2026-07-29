@@ -14,6 +14,23 @@ public class Ebook extends Livro{
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Ebook{" +
+                "waterMark='" + waterMark + '\'' +
+                '}';
     }
+
+    @Override
+    public void imprimirDadosLivro() {
+        super.imprimirDadosLivro();
+    }
+
+    @Override
+    public boolean aplicarDesconto(double desconto){
+        if (desconto > 15) {
+            return false;
+        }
+        //Acessar atributos da classe pai
+        return super.aplicarDesconto(desconto);
+    }
+
 }

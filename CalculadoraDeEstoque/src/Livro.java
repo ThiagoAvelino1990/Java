@@ -85,6 +85,7 @@ public class Livro {
             return false;
         }
         this.valor -= this.valor * (desconto/100);
+        System.out.println("Desconto de "+(desconto)+"% aplicado!");
         return true;
 
 
