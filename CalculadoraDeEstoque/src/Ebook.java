@@ -27,9 +27,11 @@ public class Ebook extends Livro{
     @Override
     public boolean aplicarDesconto(double desconto){
         if (desconto > 15) {
+            System.out.println("Desconto não aplicado");
             return false;
         }
         //Acessar atributos da classe pai
+        System.out.println("Usando a classe pai para desconto");
         return super.aplicarDesconto(desconto);
     }
 
