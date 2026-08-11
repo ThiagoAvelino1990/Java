@@ -7,8 +7,11 @@ public class DesbravandoJavaOO {
         //OrientacaoObjeto orientacaoObjeto = new OrientacaoObjeto();
         //orientacaoObjeto.ImprimirOO();
 
-        Heranca heranca = new Heranca();
-        heranca.ImprimirDadosHeranca();
+        //Heranca heranca = new Heranca();
+        //heranca.ImprimirDadosHeranca();
+
+        Polimorfismo polimorfismo= new Polimorfismo();
+        polimorfismo.imprimirDadosPolimorfismo();
 
     }
 }

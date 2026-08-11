@@ -12,13 +12,14 @@ public class Ebook extends Livro{
         this.waterMark = waterMark;
     }
 
+    /*
     @Override
     public String toString() {
         return "Ebook{" +
                 "waterMark='" + waterMark + '\'' +
                 '}';
     }
-
+    */
     @Override
     public void imprimirDadosLivro() {
         super.imprimirDadosLivro();
@@ -31,7 +32,7 @@ public class Ebook extends Livro{
             return false;
         }
         //Acessar atributos da classe pai
-        System.out.println("Usando a classe pai para desconto");
+        System.out.println("(Ebook)Usando a classe pai para desconto");
         return super.aplicarDesconto(desconto);
     }
 

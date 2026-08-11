@@ -90,7 +90,7 @@ public class Livro {
 
 
     }
-
+    /*
     @Override
     public String toString() {
         return "Livro{" +
@@ -100,7 +100,7 @@ public class Livro {
                 ", isbn=" + isbn +
                 '}';
     }
-
+    */
     public boolean temAutor(){
         return this.autor != null;
     }
